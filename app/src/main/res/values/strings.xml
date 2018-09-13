@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TMDB Test</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_no_movie_found">No movie found</string>
+    <string name="search">Search movie</string>
+    <string name="read_more">Read more</string>
+    <string name="txt_dummy_movie_overview">This is a a very big movie detail text. The rest of the text will be cropped and showen with some dots in the end</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

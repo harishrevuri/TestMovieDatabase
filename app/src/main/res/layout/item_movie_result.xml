@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/gap_internal">
+
+        <RelativeLayout
+            android:layout_width="98dp"
+            android:layout_height="139dp"
+            android:layout_margin="@dimen/gap_external">
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_thumbnail" />
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/gap_internal"
+                android:src="@drawable/ic_vc_play_circle_outline_video" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/gap_external"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_internal">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    tools:text="My Movie Name Here" />
+
+                <ImageView
+                    android:id="@+id/img_adult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_vc_adult_rating" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gap_external"
+                android:layout_marginHorizontal="@dimen/gap_external"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:padding="@dimen/gap_internal"
+                tools:text="@string/txt_dummy_movie_overview" />
+
+            <LinearLayout
+                android:id="@+id/section_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/gap_internal"
+                    android:isIndicator="true"
+                    android:max="10"
+                    android:numStars="10"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/txt_rating_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgHighlightedText"
+                    android:minEms="5"
+                    android:padding="@dimen/gap_internal"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    tools:text="124" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vc_navigate_next_expand" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>
